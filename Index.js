@@ -50,3 +50,23 @@ function EvaluateNumber(UserGuess) {
     }
     return false;
 }
+
+// Guess the Number
+function GuessTheNumber() {
+    Player.NumberToGuess = GenerateRandomNumber();
+    Player.Attempts = 0;
+    Player.Status = "Playing";
+    ShowInfo(" -----------------------------------------------");
+    ShowInfo("|       GUESS THE NUMBER BETWEEN 1 AND 10       |");
+    ShowInfo(" -----------------------------------------------");
+
+    // Array of numbers
+    const Guesses = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    // Cycle to tour the Array 
+    for (const Guess of Guesses) {
+        if (EvaluateNumber(Guess)) break;
+    }
+}
+
+GuessTheNumber();

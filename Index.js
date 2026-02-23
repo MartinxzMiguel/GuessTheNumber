@@ -14,3 +14,10 @@
         -> Generate Random Number
         -> Show Information
 */
+
+// Object - Player
+const Player = {
+    NumberToGuess: 0,
+    Attempts: 0,
+    Status: "Playing"
+};

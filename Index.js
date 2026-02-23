@@ -21,3 +21,10 @@ const Player = {
     Attempts: 0,
     Status: "Playing"
 };
+
+// Arrow Function --> Generate Random Number
+const GenerateRandomNumber = () => Math.floor(Math.random() * 10) + 1; // Number between 0 - 10
+    // Math.floor --> Removes the decimals
+
+// Arrow Function --> Show Information
+const ShowInfo = (Message) => console.log(Message);
